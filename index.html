@@ -10,24 +10,68 @@
     <body>
         <div -d="About Me">
             <h1>
-                My name is Jason Conley, and I am a Computer Scienties out of Northeast Ohio!
+                My name is Jason Conley, and I am a Computer Scientist out of Northeast Ohio!
+                <ul>
+                    <li>BS: Computer Science - Data Engineering</li>
+                    <li>Minor: Applied Statistics</li>
+                </ul>
+
             </h1>
             <p>My interests include:</p>
             <ul>
-                <li>C family and python programming</li>
-                <li>Business Intelligence</li>
-                <li>Electronic programming</li>
+                <li>C family and Python programming</li>
+                <li>Business Intelligence / Data Science</li>
+                <li>Backend programming / Data Engineering</li>
+                <li>Open Source</li>
                 <li>Self-help books</li>
                 <li>Multiplayer Games</li>
             </ul>
 
             <p>Some projects I've worked on!</p>
             <ul>
-                <li>Unix programming</li>
-                <li>Business Intelligence</li>
-                <li>Electronic programming</li>
-                <li>Self-help books</li>
-                <li>Multiplayer Games</li>
+                <li>Parking Space Counter</li>
+                <section id="project description">
+                    <p>
+                        This project was my final project in my undergrad. I had the chance to work on the backend software 
+                        of a dashboard that displayed the number of free parking spaces in a given parking lot at my university.
+                        Me and my group used ESP32 microcontrollers, and laser sensors to count the number of cars going in and 
+                        out of the parking lot driveway. These controllers then communicated on the backend to a remote server.
+                    </p>
+                    <p>
+                        The backend work included defining sockets for the controllers to connect to. This was done in C, and used
+                        stream sockets primarily. We then created multiple child processes to communicate over the port and update the data.
+                        This was then pushed to a react dashboard for viewing.
+                    </p>
+                    <p>
+                        I really enjoyed the low-level programming aspect of the project in C. It was interesting to learn about message protocol, and
+                        to develop one for my group. A favorite course of mine from undergrad was a systems programming elective. In this we learned a lot
+                        about Unix programming, and digging into manuals and documentation for system calls that have been around longer than I have been alive,
+                        and are still being used was an awesome expereince. 
+                    </p>
+                </section>
+                <li>Self-data analysis</li>
+                <section id="project description">
+                    <p>
+                        I enjoy analyzing data and investigating what parts of my own data are being collected by the apps I use everyday. The following image
+                        is a heatmap of my own instagram likes cleaned using python and displayed with seabord.
+                    </p>
+                    <img src="img/heat.png">
+                    <p>
+                        Statistics and data science are an interest of mine, and a perfect job for me would be a union of data science and software engineering.
+                    </p>
+                </section>
+                <li>Volleyball!</li>
+                <section id="project description">
+                    <p>
+                        This was the product of an elective I took in undergrad. C# was new to me, as well as the entire unity suite. I would say 
+                        the only part of the course I was comfortable in was the linear algebra aspect of the course.
+                    </p>
+                    <video></video>
+                    <p>
+                        In the end it was a great learning experience, and if I ever get an itch to create something with unity, I am happy I took the course.
+                    </p>
+
+                </section>
             </ul>
 
             <p>I am a driven individual with a passion for technology</p>

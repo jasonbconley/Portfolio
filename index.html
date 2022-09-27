@@ -50,8 +50,8 @@
                     </p>
                     <p>
                         The backend work included defining sockets for the controllers to connect to. This was done in C, and used
-                        stream sockets. We then created multiple child processes to communicate over the port and update the data.
-                        This was then pulled by the react dashboard for viewing.
+                        stream sockets. We then created multiple child processes to communicate over the port and update the data into
+                        a MySql database. These entries were then pulled by the react dashboard for viewing.
                     </p>
                     <p>
                         I really enjoyed the low-level C programming aspect. It was interesting to learn about message protocol, and
@@ -84,7 +84,10 @@
                         This project was the culmination of a data mining course from my undergrad. The project was individual, and ingested data from the famous Nigerian
                         Letter dataset. This was a collection of emails sent from scammers with the goal of getting money from the victim. The final code displayed some
                         visualizations on a website for a user to investigate. Some of the parameters a user could change was the kinds of words to include or reject from
-                        data. Altering this parameter change the visuals live. It was built in R using Shiny.
+                        data. Altering this parameter change the visuals live, and when including a user included all words for analysis the wordcloud looked like below. 
+                        Will was such a large outlier it was almost removed from the set, but will had a double meaning as a verb, as well as the document determing where 
+                        money would go after someone passed away. It was defintely used often in this context to claim the victim was going to get money, but needed to pay
+                        a small fee to claim it. The project was built in R using Shiny.
                     </p>
                     <img src="img/wordcloud.jpeg" class="center">
                     <p>

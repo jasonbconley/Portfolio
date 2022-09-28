@@ -160,11 +160,8 @@ ul {
 }
 
 li {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
     text-align: center;
+    font-style: italic;
 }
 
 .cover-left {

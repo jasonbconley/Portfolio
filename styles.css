@@ -159,7 +159,7 @@ ul {
     list-style-type: square;
 }
 
-li {
+.liInfo {
     text-align: center;
     font-style: italic;
 }

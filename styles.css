@@ -83,14 +83,6 @@ img.avatar {
 }
 
 
-pre {
-    font-size: 15px;
-    white-space: pre;
-    word-wrap: normal;
-    overflow: auto;
-    width: auto;
-}
-
 @media screen and (max-width: 580px) {
     body {
         margin: 10px auto;

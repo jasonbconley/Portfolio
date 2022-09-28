@@ -34,7 +34,7 @@ footer {
     border-top: 1px solid rgb(206,206,206);
     margin-top: 48px;
     padding-top: 24px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 header a:hover {
@@ -93,6 +93,12 @@ pre {
 
 @media screen and (max-width: 580px) {
     body {
+        margin: 10px auto;
+        padding: 0 20px 0 20px;
+        width: auto;
+        word-wrap: break-word;
+    }
+    footer {
         margin: 10px auto;
         padding: 0 20px 0 20px;
         width: auto;

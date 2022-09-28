@@ -99,6 +99,9 @@ img.avatar {
         max-width: 100%;
         width: 400px;
         height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
         img.avatar {

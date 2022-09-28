@@ -156,6 +156,7 @@ p {
 ul {
     margin: 0 0 2ex 0;
     padding: 0;
+    list-style-type: square;
 }
 
 li {
@@ -163,6 +164,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    text-align: center;
 }
 
 .cover-left {

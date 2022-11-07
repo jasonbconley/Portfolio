@@ -139,7 +139,7 @@ p {
     margin: 0 0 2ex 0;
 }
 
-ul {
+.ulInfo {
     margin: 0 0 2ex 0;
     padding: 0;
     list-style-type: square;

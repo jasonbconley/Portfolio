@@ -57,15 +57,17 @@
                         the parking lot driveway. These controllers then communicated to the backend on a remote server.
                     </p>
                     <p>
-                        The backend work included defining sockets for the controllers to connect to. This was done in C, and used
-                        stream sockets. We then created multiple child processes to communicate over the port and update the data into
-                        a MySql database. These entries were then pulled by the react dashboard for viewing.
+                        The backend work included defining logic for the controllers to connect to. This was done in python, and used
+                        the MQTT Protocol to receive messages and insert the data into MySQL. Then, I created a java cron job that would interpret
+                        the data to calculate the number of free parking spaces. This number was cached and accessed through a Java api for viewing in 
+                        react application.
                     </p>
                     <p>
-                        I really enjoyed the low-level C programming aspect. It was interesting to learn about message protocol, and
-                        to develop one for my group. A favorite course of mine from undergrad was a systems programming elective. I 
+                        I really enjoyed programming in Java. It was interesting to learn about message protocol, and
+                        to develop and api for my group. A favorite course of mine from undergrad was a systems programming elective. I 
                         learned about Unix programming, and had to dig into manuals and documentation for system calls that 
-                        have been around longer than I have been alive. Learning about this technology was very interesting due to the age.
+                        have been around longer than I have been alive. I believe this background helped me dive into the java programming that 
+                        was needed to help create the backend for the project.
                     </p>
                 </section>
                 <li class="liInfo">Self-Data Analysis</li>

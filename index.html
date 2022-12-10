@@ -9,32 +9,45 @@
 	</head>
     <header>
         <h2>
-            A little about me!
+            All about Me!
         </h2>
-        <img src="img/martialarts.JPG" class="avatar" align="left">
-        <p class="header">
-            High-level me is all about health, learning, and overall trying to be a better person. I believe that learning and working on oneself is tough, but really fullfilling and rewarding in the end.
+        <figure>
+        <img src="img/martialarts.JPG">
+        <figcaption>A picture of me in front of the St. Louis arch after a Martial Arts tournament</figcaption>
+        </figure>
+    </header>
+        
+    <body>
+        <p class="header" >
+            High-level me enjoys being with family and learning new things. I am always willing to try something new, and I am a strong believer in stepping outside of your comfort zone.</p>
         </p>
+        <p>I am a Computer Science graduate, and am currently looking for opportunities in Software Engineering. I love to program, and I know that I would find the work of a Computing Professional to be fullfilling.</p>
         <p>
-            Lower-level me enjoys diving into new things. I start a lot of my own projects by just jumping in and looking at documentation. I find it gratifyng
-            to finish a project, and that drove me through a lot of my schoolwork. I love working with people as well, and I thrive in a space where collaboration is
-            promoted and projects are pushed through to production often.
+            Lower-level me is very detail-oriented, and loves to work in a group. I enjoy working with people, and I love to tinker with side projects. Recently I have been interested in configuring a raspberry-pi module to block ads on my home network. Technology excites me, and I am always looking for the next thing to dive into. (Currently its python) 
         </p>
         <h3>You can find a lot of my work on <a href="https://github.com/jasonbconley">Github</a></h3>
-    </header>
+        <h3>Some of my favorite repositories:</h3>
+        <ul>
+            <li>Capstone Project Backend <a href="https://github.com/jasonbconley/Capstone-Backend">here</a></a></li>
+            <p>This is a comment about that repository</p>
+            <li>A collection of Jupyter Notebooks <a href="https://github.com/jasonbconley/Jupyter-Notebooks">here</a></li>
+            <p>This repository was created for one of my favorite classes at Kent State. This repository contains a lot of the work that made me comfortable with pandas and python</p>
+            <li>Side project Voting Site <a href="https://github.com/jasonbconley/Voting-Site">here</a></li>
+            <p>A side project that sprouted from an interest in exploring python and the flask framework. The goal is to write an extensive API and to test it using a framework.</p>
+        </ul>
 
-    <body>
             <h3>Education @ Kent State University</h3>
             <ul>
                 <li>BS: Computer Science - Data Engineering</li>
                 <li>Minor: Applied Statistics</li>
+                <li>GPA: 3.8</li>
             </ul>
             
             <h3>My interests include:</h3>
             <ul>
-                <li>C family and Python programming</li>
-                <li>Business Intelligence / Data Science</li>
-                <li>Backend programming / Data Engineering</li>
+                <li>Java and Python programming</li>
+                <li>Optimized Programming</li>
+                <li>Backend / Data Engineering</li>
                 <li>Open Source</li>
                 <li>Self-help books</li>
                 <li>Board / Card Games, here are a few I like:
@@ -56,51 +69,27 @@
                         My group used ESP32 microcontrollers and laser sensors to count the number of cars going in and out of 
                         the parking lot driveway. These controllers then communicated to the backend on a remote server.
                     </p>
+                    <figure>
+                    <img src="img/Capstone.jpg" width="600" height="400">
+                    <figcaption>The section of the image in the red box is the part of the project that I worked on!</figcaption>
+                    </figure>
                     <p>
                         The backend work included defining logic for the controllers to connect to. This was done in python, and used
-                        the MQTT Protocol to receive messages and insert the data into MySQL. Then, I created a java cron job that would interpret
-                        the data to calculate the number of free parking spaces. This number was cached and accessed through a Java api for viewing in 
-                        react application.
-                    </p>
-                    <p>
-                        I really enjoyed programming in Java. It was interesting to learn about message protocol, and
-                        to develop and api for my group. A favorite course of mine from undergrad was a systems programming elective. I 
-                        learned about Unix programming, and had to dig into manuals and documentation for system calls that 
-                        have been around longer than I have been alive. I believe this background helped me dive into the java programming that 
-                        was needed to help create the backend for the project.
-                    </p>
-                </section>
-                <li class="liInfo">Self-Data Analysis</li>
-                <section id="project description">
-                    <p>
-                        I like analyzing data and investigating what parts of my own data are being collected by the apps I use everyday. The following image
-                        is a heatmap of my own instagram likes cleaned using python and displayed with seabord.
-                    </p>
-                    <img src="img/heat.png" width="450px" height="350px">
-                    <p>
-                        My hypothesis for the project was that my likes would be distributed fairly around my close group of friends from high school. The 
-                        visual above shows that the hypothesis is definitely rejected. It was news to me, but the rock had more of my attention compared to 
-                        other accounts by multiple orders of magnitude.
-                    </p>
-                    <p>
-                        I also collected my tikTok data to do some analysis, but found that the only metric that had any integrity was search history. Other dimensions
-                        either lacked working links, or did not have enougn data to be interesting. I encourage others to check out their own data! They can usually be 
-                        accessed through app or on the apps website.
+                        the MQTT Protocol to receive messages and insert the data into MySQL. Then, I created a Java API built with Spring that would present 
+                        the data with regard to user permissions.
                     </p>
                 </section>
                 <li class="liInfo">Email Text data Analysis</li>
                 <section id="project description">
                     <p>
-                        This project was the culmination of a data mining course from my undergrad. The project was individual, and I decided to ingest data from the famous Nigerian
+                        This project was the culmination of a data mining course. The project was individual, and I decided to use the famous Nigerian
                         Letter dataset. This was a collection of emails sent from scammers with the goal of getting money from the victim. The final code displayed some
                         visualizations on a website for a user to investigate.
                     </p>
                     <p>
                         One of the parameters a user could change was the kinds of words to include or reject from the
                         data. Altering this parameter changed the visuals live, and when a user included all words for analysis the wordcloud looked like the one shown below. 
-                        "Will" was such a large outlier it was almost removed from the set, but the word had a double meaning as a verb, as well as a noun for the document determing where 
-                        money would go after someone passed away. It was defintely used often in this context to claim the victim was going to get money, but needed to pay
-                        a small fee to claim it. The project was built in R using Shiny.
+                        The project was built in R using Shiny.
                     </p>
                     <img src="img/wordcloud.jpeg">
                     <p>
@@ -114,14 +103,16 @@
                         This was the product of an elective I took in undergrad. C# was new to me, as well as the entire unity suite. I would say
                         the only part of the course I was comfortable in was the linear algebra aspect of the course. This was one bug I encountered that I thought was pretty funny.
                     </p>
+                    <figure>
                     <img src="img/funny.gif" alt="gif of game not working"/>
+                    </figure>
                     <p>
                         Nevertheless, I was able to create a final product, full of the most stunning volleyball gameplay never before seen.
                     </p>
-                    <div>
+                    <figure>
                         <img src="img/action.gif" alt="volleyball in action, badly"/>
-                        <em>Sarcasm Alert</em>
-                    </div>
+                        <figcaption>Sarcasm alert!</figcaption>
+                    </figure>
                     <p>
                         In the end it was a great learning experience, and if I ever get an itch to create something with unity, I can draw on this project for inspiration.
                     </p>
@@ -138,10 +129,9 @@
     </body>
 
     <footer id="footer">
-        <p>Thanks for reading!</p>
+        <p>Thanks for reading! Feel free to reach out below.</p>
         <ul class = "ulInfo">
             <li><a href="https://www.linkedin.com/in/jason-conley-2488291a1/">LinkedIn</a></li>
-            <li><a href="https://github.com/jasonbconley">Github</a></li>
             <li><a href="mailto: jasonbconley@outlook.com">jasonbconley@outlook.com</li>
         </ul>
     </footer>

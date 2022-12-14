@@ -64,15 +64,17 @@ public class MainPageHandler implements HttpHandler {
     
     public String img2Text(String path){
         String base64="";
+        // Grab file type
+        String fileType = path.substring(word.length() - 3);
         try{
-            InputStream iSteamReader = new FileInputStream("featured-700x467.png");
+            InputStream iSteamReader = new FileInputStream("../" + path);
             byte[] imageBytes = IOUtils.toByteArray(iSteamReader);
             base64 = Base64.getEncoder().encodeToString(imageBytes);
             System.out.println(base64);
         }catch(Exception e){
             e.printStackTrace();
         }
-        return "data:image/png;base64,"+base64;
+        return "data:image/" + fileType + ";base64," + base64;
     }
     
     private ArrayList<Byte> translateLine(line) {

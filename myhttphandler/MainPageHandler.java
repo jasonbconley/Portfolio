@@ -39,7 +39,7 @@ public class MainPageHandler implements HttpHandler {
             int i = 0;
             for (Byte b : response) {
                 responseHtml[i++] = b.byteValue();
-            }
+            }        
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("Error finding file");
